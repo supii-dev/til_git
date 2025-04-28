@@ -232,8 +232,53 @@ git commit -m "[docs]:브랜치 실습 test 합치기"
 
 ### 4.8. 깃 브랜치 충돌 해결해 보기
 
-- 깃 브랜치를 merge 하면 많이 발생합니다.
-- `login 브랜치`에서 나는 로그인 기능을 구현했다.
-- 나는 main 에서 계속 작업을 하고 있었습니다.
-
 # GitHub
+
+## 1. GitHub 회원가입하기
+
+- https://github.com/
+
+## 2. GitHub 프로젝트(Repository) 생성하기
+
+- 만약 til_git 프로젝트를 생성했다면 GitHub 에도 동 일하게 생성하자.
+- public 으로 셋팅 : 외부로 소스 공개
+- description 은 작성해 주자 : 프로젝트 설명
+
+## 3. GitHub 인증하기
+
+### 3.1. 무조건 GitHub 에 로그인 된 상태로 시도하셔야 합니다
+
+### 3.2. `윈도우 > 자격 증명 관리자> Windows 자격 증명` 에서 GitHub 확인
+
+- 새로 생성하시길 권장합니다.
+- PC 정리 또는 자리 이동시 반드시 삭제하셔야 합니다
+
+## 4. GitHub 프로젝트 연결하기
+
+### 4.1. 원격 저장소 연결하기
+
+- `remote` : 원격(인터넷)을 말합니다.
+- `add` : 추가하라
+- `origin`
+  - http 주소를 간략하게 별칭을 준 것입니다.
+  - 단어는 마음대로 하셔도 되요.
+  - `원격 이름`을 말함.
+
+```bash
+git remote add origin https://github.com/아이디/til_git.git
+```
+
+### 4.2. 원격 저장소 목록 보기
+
+```bash
+git remote -v
+```
+
+### 4.3. 원격 저장소에 소스 등록하기
+
+- 습관적으로 하셨으면 좋은 작업(Ctrl + S, 즉, 저장 후)
+
+```bash
+git add .
+git commit -m "[docs]:최초등록"
+```
