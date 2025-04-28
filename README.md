@@ -84,4 +84,32 @@ git config --global user.email
 git init
 ```
 
+### 4.2. 깃 현재 상태 파악하기
+
+```bash
+git status
+```
+
+### 4.3. 깃 현재 수정된 내용, 파일, 폴더 등을 저장하기
+
+- 원하는 파일만 저장하기
+
+```bash
+git add README.md
+```
+
+- 모든 파일 및 폴더 저장하기(추천)
+
+```bash
+git add .
+```
+
+### 4.4. 수정 내역 메모 남기기
+
+- 한줄 작업 메모
+
+```bash
+git commit -m "깃 작업 관련 설명글 작성"
+```
+
 # GitHub
